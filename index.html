@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independence Day Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('history')">History</a></li>
+            <li><a href="#" onclick="showSection('map')">Map</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="section">
+        <div id="home-content">
+            <p class="p1">For A New Tommorow</p>
+            <p class="p2"> For A New Beginning</p>
+            <p class="p3">Lets Pray For A</p>
+            <p class="p4">Bright Future......</p>
+            <p class="p5"> Happy Independence Day</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <img src="india-stru.jpg" alt="india-structure-in-map-image">
+        <div class="section-content">
+            <h2>About Independence Day</h2>
+            <p>Independence Day is celebrated annually on 15 August as a public holiday in India commemorating the
+                nation's independence from the United Kingdom on 15 August 1947, the day when the provisions of the
+                Indian Independence Act, which transferred legislative sovereignty to the Indian Constituent Assembly,
+                came into effect. India retained King George VI as head of state until its transition to a republic,
+                when the Constitution of India came into effect on 26 January 1950 (celebrated as Indian Republic Day)
+                and replaced the dominion prefix, Dominion of India, with the enactment of the sovereign law
+                Constitution of India. India attained independence following the independence movement noted for largely
+                non-violent resistance and civil disobedience led by Indian National Congress under the leadership of
+                Mahatma Gandhi.
+                <br>
+            </p>
+        </div>
+    </section>
+
+    <section id="history" class="section">
+        <img src="mahatma-gandhi.jpg" alt="Mahatma-Gandhi-image">
+        <div class="section-content">
+            <h2>History of Independence</h2>
+            <p>The history of India’s independence is a long and complex journey that involved decades of struggle,
+                sacrifice, and determination. The Indian Independence movement was led by key figures such as Mahatma
+                Gandhi, Jawaharlal Nehru, and many others who adopted various forms of protest including non-violent
+                resistance, civil disobedience, and negotiations with the British government.</p>
+        </div>
+    </section>
+
+    <section id="map" class="section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15032241.262522736!2d78.00657870491767!3d20.593684543939322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3f56a3cbbffb09%3A0x993a1b8dd370f440!2sIndia!5e0!3m2!1sen!2sus!4v1636654925336!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:IndependenceDay@gmail.com">independenceDay@gmail.com</a></p>
+        <p>Phone: <a href="tel:+91XYZ">0000000000</a></p>
+        <div class="footer-links">
+            <h3>Follow me:</h3>
+            <a href="https://www.linkedin.com/in/huzaifa-aaqil-7a4442259" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript to toggle sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'flex';
+        }
+    </script>
+
+</body>
+
+</html>
